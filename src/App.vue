@@ -1,15 +1,24 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <HeaderNav></HeaderNav>
+  <div class="content">
+    <div class="display-flex-start">
+      <MyProfileCard></MyProfileCard>
+      <div class="page">
+        <RouterView></RouterView>
+      </div>
+    </div>
+  </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import HeaderNav from './components/HeaderNav.vue';
+import MyProfileCard from './components/MyProfileCard.vue';
 
 export default {
   name: 'App',
   components: {
-    HelloWorld
+    HeaderNav,
+    MyProfileCard
   }
 }
 </script>
@@ -17,10 +26,40 @@ export default {
 <style>
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
+}
+
+.ml-5 {
+  margin-left: 5px;
+}
+
+.mr-5 {
+  margin-right: 5px;
+}
+
+.mt-15 {
+  margin-top: 15px;
+}
+
+.content {
+  margin: 20px;
+  width: auto;
+}
+
+.photo {
+  display: block;
+  margin: auto;
+  max-height: 300px;
+  border-radius: 200px;
+}
+
+.display-flex-start {
+  display: flex;
+  align-items: flex-start;
+}
+
+.page {
+  margin-left: 20px;
+  margin-right: auto;
+  width: 100%;
 }
 </style>
