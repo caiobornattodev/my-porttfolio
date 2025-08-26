@@ -1,24 +1,17 @@
 <template>
   <HeaderNav></HeaderNav>
   <div class="content">
-    <div class="display-flex-start">
-      <MyProfileCard></MyProfileCard>
-      <div class="page">
-        <RouterView></RouterView>
-      </div>
-    </div>
+    <RouterView></RouterView>
   </div>
 </template>
 
 <script>
 import HeaderNav from './components/HeaderNav.vue';
-import MyProfileCard from './components/MyProfileCard.vue';
 
 export default {
   name: 'App',
   components: {
-    HeaderNav,
-    MyProfileCard
+    HeaderNav
   }
 }
 </script>
@@ -57,9 +50,13 @@ export default {
   align-items: flex-start;
 }
 
-.page {
-  margin-left: 20px;
-  margin-right: auto;
-  width: 100%;
+.logo {
+  margin-top: 15px;
+  max-height: 130px;
+  border-radius: 10px;
+}
+
+.description {
+  margin-left: 30px;
 }
 </style>

@@ -4,7 +4,7 @@
     </container-box>
     <container-box class="mt-15" v-for="tec in tecnologies" :key="tec.name">
         <div class="display-flex-start">
-            <img :src="tec.imgSrc" alt="logo">
+            <img class="logo" :src="tec.imgSrc" alt="logo">
             <div class="description">
                 <h3>{{ tec.name }}</h3>
                 <p><span v-html="tec.description"></span></p>
@@ -83,15 +83,3 @@ export default {
     }
 }
 </script>
-
-<style>
-img {
-    margin-top: 15px;
-    max-height: 130px;
-    border-radius: 10px;
-}
-
-.description {
-    margin-left: 30px;
-}
-</style>

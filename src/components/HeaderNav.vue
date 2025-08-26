@@ -4,13 +4,16 @@
             <h1>Meu Portfólio</h1>
             <ul>
                 <li>
-                    <router-link to="/aboutMe">Sobre</router-link> 
+                    <router-link to="/aboutMe">Sobre</router-link>
                 </li>
                 <li class="border-left">
-                    <router-link to="/tecnologies" class="ml-5">Tecnologias</router-link> 
+                    <router-link to="/tecnologies" class="ml-5">Tecnologias</router-link>
                 </li>
-                <li class="border-left" >
-                    <router-link to="/experiences" class="ml-5">Experiência profissional</router-link> 
+                <li class="border-left">
+                    <router-link to="/graduations" class="ml-5">Formação</router-link>
+                </li>
+                <li class="border-left">
+                    <router-link to="/experiences" class="ml-5">Experiência profissional</router-link>
                 </li>
             </ul>
         </nav>
@@ -45,16 +48,16 @@ header a {
 }
 
 header h1 {
-    color:  white;
+    color: white;
     margin-top: 23px;
     margin-left: 15px;
     margin-right: 0;
 }
 
 li {
- margin-right: 10px;
- font-size: 30px;
- padding: 5px;
+    margin-right: 10px;
+    font-size: 30px;
+    padding: 5px;
 }
 
 .border-left {

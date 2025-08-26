@@ -1,8 +1,11 @@
 <template>
+    <container-box>
+        <h2>Minhas experiências: </h2>
+    </container-box>
     <container-box :class="experience.marginTop ? 'mt-15' : null" v-for="experience in experiences"
         :key="experience.title">
         <div class="display-flex-start">
-            <img :src="experience.imgSrc" alt="logo">
+            <img class="logo" :src="experience.imgSrc" alt="logo">
             <div class="description">
                 <h3>{{ experience.title }}</h3>
                 <p><strong>Cargo: </strong>{{ experience.role }}</p>
@@ -48,14 +51,3 @@ export default {
 }
 </script>
 
-<style scoped>
-img {
-    margin-top: 15px;
-    max-height: 130px;
-    border-radius: 10px;
-}
-
-.description {
-    margin-left: 30px;
-}
-</style>

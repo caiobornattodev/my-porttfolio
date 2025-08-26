@@ -5,6 +5,7 @@ import AboutMePage from './pages/AboutMePage.vue';
 import TecnologiesPage from './pages/TecnologiesPage.vue';
 import ExperiencesPage from './pages/ExperiencesPage.vue';
 import ContainerBox from './components/ContainerBox.vue';
+import GraduationsPage from './pages/GraduationsPage.vue';
 
 import { OhVueIcon,addIcons } from 'oh-vue-icons';
 import * as FaIcons from "oh-vue-icons/icons/fa";
@@ -18,6 +19,7 @@ app.use(router)
 app.component('about-me-page', AboutMePage)
 app.component('tecnoloies-page', TecnologiesPage)
 app.component('experiences-page', ExperiencesPage)
+app.component('graduations-page',GraduationsPage)
 
 //Components
 app.component('container-box',ContainerBox);
