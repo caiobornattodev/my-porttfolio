@@ -1,6 +1,6 @@
 <template>
     <container-box>
-        <h2>Formções completas: </h2>
+        <h2>Formações completas: </h2>
     </container-box>
     <container-box :class="grad.marginTop ? 'mt-15' : null" v-for="grad in graduations" :key="grad.name">
         <div class="display-flex-start">
