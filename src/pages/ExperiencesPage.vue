@@ -29,7 +29,7 @@ export default {
                     description: `Modificação do software BRCondos para correção de erros, atualização de interfaces e
                     melhoria de desempenho. Implementação de IAs em módulos para geração de texto e
                     consulta de documentos.`,
-                    dateStart: '01/2022',
+                    dateStart: '03/2023',
                     dateEnd: '02/2023',
                     imgSrc: require('../assets/brcondos_logo.jpeg'),
                     marginTop: true
@@ -41,7 +41,7 @@ export default {
                     de aplicações Windows Forms, <br />desenvolvimento de serviços para integração com
                     WhatsApp e importação de NF-e para SAP Business One.`,
                     dateStart: '01/2022',
-                    dateEnd: '02/2023',
+                    dateEnd: '08/2024',
                     imgSrc: require('../assets/axetecnologia_logo.jpeg'),
                     marginTop: true
                 }
