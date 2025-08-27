@@ -1,5 +1,5 @@
 <template>
-  <HeaderNav></HeaderNav>
+  <HeaderNav @change-theme="changeTheme()"></HeaderNav>
   <div class="content">
     <RouterView></RouterView>
   </div>
@@ -10,8 +10,22 @@ import HeaderNav from './components/HeaderNav.vue';
 
 export default {
   name: 'App',
+  data() {
+    return {
+      darkMode: false
+    }
+  },
   components: {
     HeaderNav
+  },
+  methods: {
+    changeTheme() {
+      this.darkMode = !this.darkMode
+
+      document.body.className = this.darkMode ? 'darkmode' : ''
+
+      console.log('Dark mode: ' + this.darkMode)
+    }
   }
 }
 </script>
@@ -52,11 +66,34 @@ export default {
 
 .logo {
   margin-top: 15px;
-  max-height: 130px;
+  height: 130px;
+  width: 130px;
   border-radius: 10px;
 }
 
 .description {
   margin-left: 30px;
+}
+
+a {
+  color: dodgerblue;
+}
+
+/*Darkmode*/
+.darkmode {
+  background-color: #352F44;
+  color: white;
+}
+
+.darkmode header {
+  background-color: #5B4B8A;
+}
+
+.darkmode .container-box {
+  background-color: #5C5470;
+}
+
+.darkmode a {
+  color: white;
 }
 </style>

@@ -32,7 +32,7 @@ export default {
                     dateStart: '01/2022',
                     dateEnd: '02/2023',
                     imgSrc: require('../assets/brcondos_logo.jpeg'),
-                    marginTop: false
+                    marginTop: true
                 },
                 {
                     title: 'Axe Tecnologia',

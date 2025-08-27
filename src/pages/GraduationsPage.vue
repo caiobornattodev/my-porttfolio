@@ -22,7 +22,7 @@ export default {
         return {
             graduations: [
                 { name: 'Senai Norte (Joinville/SC)', type: 'Ensino Médio', dateStart: '2017', dateEnd: '2019', imgSrc: require('../assets/senai_logo.png'), marginTop : true },
-                { name: 'Escola Tecnica Tupy (Joinville/SC)', type: 'Tecnico em T.I', dateStart: '2020', dateEnd: '2021', imgSrc: require('../assets/ett_logo.jpeg'), marginTop: false },
+                { name: 'Escola Tecnica Tupy (Joinville/SC)', type: 'Tecnico em T.I', dateStart: '2020', dateEnd: '2021', imgSrc: require('../assets/ett_logo.jpeg'), marginTop: true },
             ]
         }
     }

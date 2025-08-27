@@ -16,9 +16,28 @@
                     <router-link to="/experiences" class="ml-5">Experiência profissional</router-link>
                 </li>
             </ul>
+            <v-icon 
+                title="Trocar tema" 
+                class="icon" 
+                name="fa-adjust" 
+                fill="white" 
+                scale="2.2" 
+                @click="toggleTheme()" 
+            />
         </nav>
     </header>
 </template>
+
+<script>
+export default {
+    emits: ['change-theme'],
+    methods: {
+        toggleTheme() {
+            this.$emit('change-theme')
+        }
+    }
+}
+</script>
 
 <style scoped>
 header {
@@ -34,6 +53,7 @@ header {
 
 header nav {
     display: flex;
+    width: 100%;
 }
 
 header ul {
@@ -62,5 +82,13 @@ li {
 
 .border-left {
     border-left: 2px solid white;
+}
+
+.icon {
+    margin-top: 17px;
+    margin-bottom: 0px;
+    margin-left: auto;
+    margin-right: 7px;
+    cursor: pointer;
 }
 </style>
